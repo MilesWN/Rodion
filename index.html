@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Солнышко — Детский сад</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Детский сад «Солнышко»</h1>
+    <p>Забота, любовь и развитие для ваших малышей</p>
+  </header>
+
+  <main>
+    <!-- Карточки воспитателей -->
+    <div class="educators">
+      <div class="educator-card">
+        <h3>Воспитатель: Анна Петровна</h3>
+        <p>Группа: «Пчёлки» (3–4 года)</p>
+        <button class="toggle-rating">Оценить работу</button>
+        <div class="rating-panel" style="display: none;">
+          <h4>Оцените работу воспитателя:</h4>
+          <div class="rating-item">
+            <label>Доброта и забота:</label>
+            <input type="range" min="1" max="5" value="3" class="kindness-rating">
+          </div>
+          <div class="rating-item">
+            <label>Развивающие занятия:</label>
+            <input type="range" min="1" max="5" value="3" class="activities-rating">
+          </div>
+          <div class="rating-item">
+            <label>Общение с родителями:</label>
+            <input type="range" min="1" max="5" value="3" class="communication-rating">
+          </div>
+          <div class="rating-item">
+            <label>Организация дня:</label>
+            <input type="range" min="1" max="5" value="3" class="schedule-rating">
+          </div>
+          <button class="submit-rating">Отправить отзыв</button>
+        </div>
+        <button class="enroll-button">Записать ребёнка</button>
+      </div>
+
+      <div class="educator-card">
+        <h3>Воспитатель: Елена Сергеевна</h3>
+        <p>Группа: «Звёздочки» (4–5 лет)</p>
+        <button class="toggle-rating">Оценить работу</button>
+        <div class="rating-panel" style="display: none;">
+          <h4>Оцените работу воспитателя:</h4>
+          <div class="rating-item">
+            <label>Доброта и забота:</label>
+            <input type="range" min="1" max="5" value="3" class="kindness-rating">
+          </div>
+          <div class="rating-item">
+            <label>Развивающие занятия:</label>
+            <input type="range" min="1" max="5" value="3" class="activities-rating">
+          </div>
+          <div class="rating-item">
+            <label>Общение с родителями:</label>
+            <input type="range" min="1" max="5" value="3" class="communication-rating">
+          </div>
+          <div class="rating-item">
+            <label>Организация дня:</label>
+            <input type="range" min="1" max="5" value="3" class="schedule-rating">
+          </div>
+          <button class="submit-rating">Отправить отзыв</button>
+        </div>
+        <button class="enroll-button">Записать ребёнка</button>
+      </div>
+    </div>
+
+    <!-- График удовлетворённости -->
+    <div class="satisfaction-chart">
+      <h3>Удовлетворённость родителей работой воспитателей</h3>
+      <canvas id="satisfactionChart"></canvas>
+    </div>
+
+    <!-- Анимация -->
+    <div class="celebration-animation" style="display: none;">
+      <img src="assets/sun-smile.svg" alt="Солнышко улыбается" class="celebration-image">
+      <p>Спасибо за доверие!</p>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
