@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff9e6; /* Светло-жёлтый, как солнышко */
+  color: #5a3921; /* Тёплый коричневый */
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #ffcc66, #ff9966);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.educators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.educator-card {
+  flex: 1 1 320px;
+  max-width: 420px;
+  background: #ffffff;
+  border: 2px solid #ffcc66;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(255, 153, 102, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educator-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 153, 102, 0.3);
+}
+
+.toggle-rating {
+  padding: 8px 16px;
+  background: #ff9966;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.toggle-rating:hover {
+  background: #ff6633;
+}
+
+.rating-panel {
+  margin-top: 15px;
+  padding: 15px;
+  border: 2px dashed #ffb380;
+  border-radius: 12px;
+  background-color: #fffdf7;
+}
+
+.rating-item {
+  margin: 12px 0;
+}
+
+.rating-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #d46b08;
+}
+
+.enroll-button {
+  display: block;
+  margin-top: 15px;
+  padding: 12px;
+  background: #66c2ff; /* Голубой — как небо */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.enroll-button:hover {
+  background: #33a1ff;
+}
+
+.satisfaction-chart {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(255, 153, 102, 0.2);
+  margin-top: 30px;
+  border: 2px solid #ffcc66;
+}
+
+#satisfactionChart {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+.celebration-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 153, 102, 0.5);
+  text-align: center;
+  border: 3px solid #ffcc66;
+}
+
+.celebration-image {
+  width: 120px;
+  height: auto;
+  animation: bounce 1.5s infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.celebration-animation p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6633;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .educator-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
